@@ -4,21 +4,11 @@
 		"indexes": "firestore.indexes.json"
 	},
 	"hosting": {
-		"public": "public",
+		"source": ".",
 		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-		"rewrites": [
-			{
-				"source": "**",
-				"destination": "/index.html"
-			}
-		]
-		// This is for trying w/ the frameworks experiment enabled
-		// `firebase experiments:enable webframeworks`
-		// "source": ".",
-		// "frameworksBackend": {
-		// 	"region": "europe-west1",
-		// 	"invoker": "public"
-		// }
+		"frameworksBackend": {
+			"region": "us-central1"
+		}
 	},
 	"storage": {
 		"rules": "storage.rules"
