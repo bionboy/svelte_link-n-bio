@@ -18,3 +18,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SVELTE_LINK_IN_BIO }}'
           channelId: live
           projectId: svelte-link-in-bio
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
