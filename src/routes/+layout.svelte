@@ -4,7 +4,7 @@
 	import '../app.css';
 </script>
 
-<div>
-	<NavBar />
+<NavBar />
+<div class="min-h-screen flex flex-col">
 	<slot />
 </div>
